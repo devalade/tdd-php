@@ -30,16 +30,16 @@ composer -v
 
 ### Windows :
 1. Clonez ou téléchargez le projet
-   - Option 1 : Téléchargez le ZIP et extrayez-le dans `C:\xampp\htdocs\formulaire-contact`
+   - Option 1 : Téléchargez le ZIP et extrayez-le dans `C:\xampp\htdocs\tdd-php`
    - Option 2 : Utilisez Git Bash :
    ```bash
    cd C:\xampp\htdocs
-   git clone https://github.com/votre-compte/formulaire-contact-securise.git
+   git clone https://github.com/devalade/tdd-php.git
    ```
 
 2. Ouvrez le terminal (CMD) en tant qu'administrateur :
 ```bash
-cd C:\xampp\htdocs\formulaire-contact-securise
+cd C:\xampp\htdocs\tdd-php
 composer install
 composer dump-autoload -o
 ```
@@ -50,8 +50,8 @@ composer dump-autoload -o
 
 ### Linux/MacOS :
 ```bash
-git clone https://github.com/votre-compte/formulaire-contact-securise.git
-cd formulaire-contact-securise
+git clone https://github.com/devalade/tdd-php.git
+cd tdd-php
 composer install
 touch messages.db
 ```
@@ -60,7 +60,7 @@ touch messages.db
 
 ### Windows :
 ```bash
-cd C:\xampp\htdocs\formulaire-contact-securise
+cd C:\xampp\htdocs\tdd-php
 .\vendor\bin\phpunit
 ```
 
@@ -77,7 +77,7 @@ Pour un test spécifique :
 ## 📝 Structure du Projet
 
 ```
-formulaire-contact-securise/
+tdd-php/
 ├── composer.json
 ├── index.php                # Point d'entrée
 ├── messages.db             # Base de données SQLite
@@ -95,13 +95,13 @@ formulaire-contact-securise/
 2. Activez Apache
 3. Ouvrez votre navigateur et accédez à :
 ```
-http://localhost/formulaire-contact-securise
+http://localhost/tdd-php
 ```
 
 ### Avec le serveur PHP intégré :
 ```bash
 # Windows (CMD)
-cd C:\xampp\htdocs\formulaire-contact-securise
+cd C:\xampp\htdocs\tdd-php
 php -S localhost:8000
 
 # Linux/MacOS
