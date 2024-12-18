@@ -8,7 +8,8 @@ Ce projet est un exemple de formulaire de contact sécurisé en PHP, conçu pour
 1. Installez XAMPP (inclut PHP, SQLite et Apache)
    - Téléchargez XAMPP depuis [le site officiel](https://www.apachefriends.org/fr/index.html)
    - Choisissez la version avec PHP 8.1 ou supérieur
-   - Pendant l'installation, sélectionnez au minimum Apache, PHP et SQLite
+   - Pendant l'installation, sélectionnez au minimum (Apache, Nginx), PHP et SQLite. Les systèmes linux viennent avec un serveur web. 
+
 
 2. Installez Composer
    - Téléchargez l'installateur Windows sur [getcomposer.org](https://getcomposer.org/download/)
@@ -22,7 +23,7 @@ composer -v
 ```
 
 ### Pour Linux/MacOS :
-- PHP 8.1 ou supérieur : `php -v`
+- PHP 8.2 ou supérieur : `php -v`
 - Composer : `composer -v`
 - SQLite3 : `sqlite3 -version`
 
@@ -127,6 +128,8 @@ php -S localhost:8000
    - Ouvrez `C:\xampp\php\php.ini`
    - Décommentez la ligne `;extension=pdo_sqlite`
    - Redémarrez Apache
+4. Erreur zip
+   Installez un logiciel de compression qui supporte zip (unzip, winrar)  
 
 ### Linux/MacOS :
 ```bash
@@ -144,8 +147,8 @@ chmod 777 .
 
 En cas de problème :
 1. Vérifiez la section "Résolution des Problèmes"
-2. Contactez votre formateur
-3. Créez une issue sur GitHub
+2. Ecrivez à Florian
+3. Créez une issue sur GitHub avec une capture d'écran des erreurs svp
 
 ---
 Projet réalisé dans le cadre de la formation sécurité et tests en PHP.
